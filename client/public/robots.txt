@@ -1,0 +1,20 @@
+# Robots.txt pour simulateur-pret-immobilier.fr
+# Optimisé pour le référencement SEO
+
+User-agent: *
+Allow: /
+Allow: /faq
+Allow: /mentions-legales
+Allow: /guide-premier-achat
+Allow: /comparatif-assurances
+
+# Bloquer les pages admin et techniques
+Disallow: /admin
+Disallow: /api/
+Disallow: /merci
+
+# Sitemap
+Sitemap: https://simulateur-pret-immobilier.fr/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
