@@ -26,8 +26,8 @@ export default function Contact() {
 
   const validatePhone = (phone: string): boolean => {
     const cleaned = phone.replace(/\s/g, "");
-    const re = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
-    return re.test(cleaned);
+    // Validation plus souple : au moins 10 chiffres
+    return cleaned.length >= 10;
   };
 
   const sendContactMutation = trpc.contact.send.useMutation();
@@ -271,12 +271,9 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium mb-1">Téléphone</p>
-                      <a 
-                        href="tel:+33123456789" 
-                        className="text-primary hover:underline"
-                      >
-                        +33 1 23 45 67 89
-                      </a>
+	                      <span className="text-muted-foreground">
+	                        Contact par email uniquement
+	                      </span>
                       <p className="text-sm text-muted-foreground">Du lundi au vendredi, 9h-18h</p>
                     </div>
                   </div>
@@ -287,10 +284,10 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium mb-1">Adresse</p>
-                      <p className="text-muted-foreground">
-                        [À compléter]<br />
-                        France
-                      </p>
+	                      <p className="text-muted-foreground">
+	                        Ambarès Centre, 33440<br />
+	                        Ambarès-et-Lagrave, France
+	                      </p>
                     </div>
                   </div>
                 </div>
