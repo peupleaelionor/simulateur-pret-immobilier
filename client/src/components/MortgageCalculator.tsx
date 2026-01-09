@@ -114,7 +114,15 @@ export default function MortgageCalculator({
             <div className="flex items-center justify-between">
               <Label className="text-base font-medium flex items-center gap-2">
                 <Euro className="h-4 w-4 text-primary" />
-                Vos revenus mensuels
+                Revenu net mensuel
+                <Tooltip>
+                  <TooltipTrigger>
+                    <HelpCircle className="h-4 w-4 text-muted-foreground" />
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-xs">
+                    <p>Indiquez votre salaire net après impôts et avant prélèvement à la source.</p>
+                  </TooltipContent>
+                </Tooltip>
               </Label>
               <div className="flex items-center gap-2">
                 <span className={`text-sm ${revenusType === "net" ? "font-medium" : "text-muted-foreground"}`}>

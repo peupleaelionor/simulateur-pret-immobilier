@@ -41,13 +41,13 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Entreprise</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition">
+                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
                   Qui sommes-nous
                 </Link>
               </li>
               <li>
                 <a
-                  href="mailto:contact@simulateur-pret.fr"
+                  href="mailto:contact@simvan.digital"
                   className="text-sm text-muted-foreground hover:text-primary transition"
                 >
                   Nous contacter
@@ -69,17 +69,17 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Légal</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition">
+                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
                   Mentions légales
                 </Link>
               </li>
               <li>
-                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition">
+                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
                   Politique de confidentialité
                 </Link>
               </li>
               <li>
-                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition">
+                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
                   Conditions d'utilisation
                 </Link>
               </li>
