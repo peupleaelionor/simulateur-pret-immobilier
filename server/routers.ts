@@ -4,6 +4,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { TRPCError } from "@trpc/server";
+import { sendContactEmail, sendLeadEmail } from "./email";
 import {
   createLead,
   getLeads,
@@ -95,6 +96,21 @@ export const appRouter = router({
           userAgent,
           ipAddress,
         });
+
+        // Send email notification for new lead
+        if (lead) {
+          await sendLeadEmail({
+            email: input.email,
+            phone: input.phone,
+            montantEmprunte: input.montantEmprunte,
+            dureeAns: input.dureeAns,
+            revenusNets: input.revenusNets,
+            apport: input.apport,
+            mensualite: input.mensualite,
+            zoneGeographique: input.zoneGeographique,
+            typeBien: input.typeBien,
+          });
+        }
 
         return { success: true, leadId: lead?.id };
       }),
@@ -294,21 +310,18 @@ export const appRouter = router({
         message: z.string().min(1, "Le message est requis"),
       }))
       .mutation(async ({ input }) => {
-        // For now, just log the contact message
-        // In production, you would send an email here
-        console.log("Contact form submission:", {
-          ...input,
-          timestamp: new Date().toISOString(),
-          destination: "simvan.immo@outlook.com"
+        // Send email notification
+        const emailSent = await sendContactEmail({
+          name: input.name,
+          email: input.email,
+          phone: input.phone,
+          subject: input.subject,
+          message: input.message,
         });
 
-        // TODO: Implement email sending with nodemailer or similar
-        // Example:
-        // await sendEmail({
-        //   to: "simvan.immo@outlook.com",
-        //   subject: `Contact: ${input.subject || 'Nouveau message'}`,
-        //   text: `Nom: ${input.name}\nEmail: ${input.email}\nTéléphone: ${input.phone || 'Non renseigné'}\n\nMessage:\n${input.message}`
-        // });
+        if (!emailSent) {
+          console.error("[Contact] Failed to send email, but returning success to user");
+        }
 
         return { success: true };
       }),
