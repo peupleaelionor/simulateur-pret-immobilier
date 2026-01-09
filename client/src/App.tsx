@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import CookieBanner from "./components/CookieBanner";
 
+
 function Router() {
   return (
     <Switch>

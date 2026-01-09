@@ -5,6 +5,8 @@ import SEOHead from "@/components/SEOHead";
 import MortgageCalculator from "@/components/MortgageCalculator";
 import ResultsDisplay from "@/components/ResultsDisplay";
 import LeadModal from "@/components/LeadModal";
+import Testimonials from "@/components/Testimonials";
+import TrustBadges from "@/components/TrustBadges";
 import { trpc } from "@/lib/trpc";
 import {
   type ResultatSimulation,
@@ -177,6 +179,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust Badges */}
+      <TrustBadges />
+
       {/* Calculator Section */}
       <section id="calculateur" className="section bg-secondary/30">
         <div className="container">
@@ -307,6 +312,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Final CTA Section */}
       <section className="section bg-primary text-primary-foreground">
