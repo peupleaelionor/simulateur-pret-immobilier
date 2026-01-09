@@ -89,7 +89,7 @@ cp .env.example .env
 1. Allez sur https://analytics.google.com
 2. Cliquez sur **Admin** (roue dentée en bas à gauche)
 3. Cliquez sur **Créer une propriété**
-4. Nom: "Simulateur Prêt Immobilier"
+4. Nom: "Simvan Digital"
 5. Fuseau horaire: Europe/Paris
 6. Devise: EUR
 7. Cliquez sur **Suivant**
@@ -137,7 +137,7 @@ Les événements suivants sont automatiquement trackés :
 3. Cliquez sur **Connecter des sources de données**
 4. Sélectionnez **Web**
 5. Cliquez sur **Connecter**
-6. Nom: "Simulateur Prêt Immobilier"
+6. Nom: "Simvan Digital"
 7. URL: `https://simulateur-pret.fr`
 8. Cliquez sur **Continuer**
 

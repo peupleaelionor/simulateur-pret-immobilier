@@ -16,7 +16,7 @@ export default function EspaceCourtiers() {
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/">
-            <a className="text-2xl font-bold text-primary">Simulateur Prêt Immobilier</a>
+            <a className="text-2xl font-bold text-primary">Simvan Digital</a>
           </Link>
           <Button>Devenir Partenaire</Button>
         </div>
@@ -186,7 +186,7 @@ export default function EspaceCourtiers() {
       {/* Footer */}
       <footer className="border-t bg-muted/50 mt-16">
         <div className="container mx-auto px-4 py-8 text-center text-sm text-muted-foreground">
-          <p>© 2026 Simulateur Prêt Immobilier. Tous droits réservés.</p>
+          <p>© 2026 Simvan Digital. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

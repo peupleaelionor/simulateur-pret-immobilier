@@ -19,7 +19,7 @@ export default function LegalNotice() {
             <div>
               <h3 className="font-semibold mb-2">Entreprise</h3>
               <p className="text-sm text-muted-foreground mb-2">
-                <strong>Nom :</strong> Simulateur Prêt Immobilier SARL
+                <strong>Nom :</strong> Simvan Digital SARL
               </p>
               <p className="text-sm text-muted-foreground mb-2">
                 <strong>Siège social :</strong> 123 Avenue de la République, 75011 Paris, France
@@ -153,7 +153,7 @@ export default function LegalNotice() {
             <div>
               <h3 className="font-semibold mb-2">8. Responsable de traitement</h3>
               <p className="text-muted-foreground">
-                Simulateur Prêt Immobilier SARL est responsable du traitement de vos données. Pour toute question,
+                Simvan Digital SARL est responsable du traitement de vos données. Pour toute question,
                 contactez notre Délégué à la Protection des Données (DPO) :
               </p>
               <p className="text-muted-foreground mt-2">
@@ -195,7 +195,7 @@ export default function LegalNotice() {
               personnalisés, consultez un courtier ou votre banque.
             </p>
             <p>
-              <strong>Responsabilité :</strong> Simulateur Prêt Immobilier décline toute responsabilité quant aux
+              <strong>Responsabilité :</strong> Simvan Digital décline toute responsabilité quant aux
               décisions prises sur la base de ce simulateur.
             </p>
           </CardContent>
@@ -210,7 +210,7 @@ export default function LegalNotice() {
             <div>
               <h3 className="font-semibold mb-2">Propriété intellectuelle</h3>
               <p className="text-muted-foreground">
-                Tous les contenus de ce site (textes, graphiques, logos) sont la propriété de Simulateur Prêt Immobilier
+                Tous les contenus de ce site (textes, graphiques, logos) sont la propriété de Simvan Digital
                 ou de ses partenaires. Toute reproduction sans autorisation est interdite.
               </p>
             </div>

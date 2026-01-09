@@ -29,13 +29,13 @@ Ce guide explique comment optimiser le référencement et activer tous les angle
 
 ```html
 <!-- Page d'accueil -->
-<h1>Simulateur Prêt Immobilier 2026 - Calcul Gratuit</h1>
+<h1>Simvan Digital 2026 - Calcul Gratuit</h1>
 
 <!-- Page FAQ -->
-<h1>Questions Fréquentes - Simulateur Prêt Immobilier</h1>
+<h1>Questions Fréquentes - Simvan Digital</h1>
 
 <!-- Page locale (Paris) -->
-<h1>Simulateur Prêt Immobilier Paris - Calcul Gratuit</h1>
+<h1>Simvan Digital Paris - Calcul Gratuit</h1>
 ```
 
 #### H2 (Sections Principales)
@@ -52,7 +52,7 @@ Ce guide explique comment optimiser le référencement et activer tous les angle
 #### Title (55-60 caractères)
 
 ```html
-<title>Simulateur Prêt Immobilier 2026 | Calcul Gratuit</title>
+<title>Simvan Digital 2026 | Calcul Gratuit</title>
 ```
 
 #### Description (150-160 caractères)
@@ -64,7 +64,7 @@ Ce guide explique comment optimiser le référencement et activer tous les angle
 #### Open Graph (Facebook)
 
 ```html
-<meta property="og:title" content="Simulateur Prêt Immobilier 2026">
+<meta property="og:title" content="Simvan Digital 2026">
 <meta property="og:description" content="Calculez votre capacité d'emprunt en 30s">
 <meta property="og:image" content="https://simulateur-pret.fr/og-image.jpg">
 <meta property="og:url" content="https://simulateur-pret.fr">
@@ -75,7 +75,7 @@ Ce guide explique comment optimiser le référencement et activer tous les angle
 
 ```html
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Simulateur Prêt Immobilier 2026">
+<meta name="twitter:title" content="Simvan Digital 2026">
 <meta name="twitter:description" content="Calculez votre capacité d'emprunt en 30s">
 <meta name="twitter:image" content="https://simulateur-pret.fr/twitter-card.jpg">
 ```
@@ -133,7 +133,7 @@ Sitemap: https://simulateur-pret.fr/sitemap.xml
 {
   "@context": "https://schema.org",
   "@type": "FinancialProduct",
-  "name": "Simulateur Prêt Immobilier",
+  "name": "Simvan Digital",
   "description": "Calculateur de capacité d'emprunt immobilier",
   "provider": {
     "@type": "Organization",
@@ -219,9 +219,9 @@ Les pages locales sont générées automatiquement à partir du module `shared/s
   population: 280966,
   averagePropertyPrice: 3200,
   averageRate: 3.45,
-  metaTitle: "Simulateur Prêt Immobilier Strasbourg 2026 - Calcul Gratuit",
+  metaTitle: "Simvan Digital Strasbourg 2026 - Calcul Gratuit",
   metaDescription: "Simulez votre prêt immobilier à Strasbourg...",
-  h1: "Simulateur Prêt Immobilier Strasbourg",
+  h1: "Simvan Digital Strasbourg",
   content: "Strasbourg, capitale européenne...",
 }
 ```

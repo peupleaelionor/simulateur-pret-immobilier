@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title="Simulateur Prêt Immobilier 2026 - Calculez votre capacité d'emprunt"
+        title="Simvan Digital 2026 - Calculez votre capacité d'emprunt"
         description="Simulez votre prêt immobilier en 30 secondes. Algorithmes bancaires français réels, règles HCSF 2026, tableau d'amortissement complet. 100% gratuit."
         canonical="https://simulateur-pret-immobilier.fr"
       />
@@ -110,7 +110,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <HomeIcon className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simulateur Prêt Immobilier</span>
+            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
           </a>
           <nav className="flex items-center gap-4">
             <a href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -371,7 +371,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Simulateur Prêt Immobilier. Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()} Simvan Digital. Tous droits réservés.</p>
             <p className="mt-2">
               Les simulations sont fournies à titre indicatif et ne constituent pas une offre de prêt.
             </p>

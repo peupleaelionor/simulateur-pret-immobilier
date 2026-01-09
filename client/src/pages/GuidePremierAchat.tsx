@@ -14,7 +14,7 @@ export default function GuidePremierAchat() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <Home className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simulateur Prêt Immobilier</span>
+            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
           </a>
           <nav className="flex items-center gap-4">
             <a href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -232,7 +232,7 @@ export default function GuidePremierAchat() {
               <a href="/mentions-legales" className="hover:text-foreground">Mentions légales</a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Simulateur Prêt Immobilier
+              © {new Date().getFullYear()} Simvan Digital
             </p>
           </div>
         </div>

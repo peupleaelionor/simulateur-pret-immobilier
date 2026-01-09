@@ -1,4 +1,4 @@
-# 🏠 Simulateur Prêt Immobilier - Machine à Cash Ultra-Optimisée
+# 🏠 Simvan Digital - Machine à Cash Ultra-Optimisée
 
 Site ultra-optimisé pour générer des leads qualifiés et des revenus d'affiliation dans le marché français de l'immobilier.
 

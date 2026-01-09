@@ -1,4 +1,4 @@
-# Simulateur Prêt Immobilier - TODO
+# Simvan Digital - TODO
 
 ## Phase 1: Configuration initiale
 - [x] Schéma base de données (leads, settings, analytics)

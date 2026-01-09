@@ -1,5 +1,5 @@
 /**
- * Simulateur de Prêt Immobilier - Algorithmes Bancaires Français
+ * Simvan Digital - Algorithmes Bancaires Français
  * 
  * Ces algorithmes reproduisent les calculs utilisés par les banques françaises
  * pour évaluer la capacité d'emprunt et calculer les mensualités.

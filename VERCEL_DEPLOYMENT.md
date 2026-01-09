@@ -1,4 +1,4 @@
-# 🚀 Déploiement Vercel - Simulateur de Prêt Immobilier
+# 🚀 Déploiement Vercel - Simvan Digital
 
 ## ✅ Étape 1 : Dépôt GitHub créé
 Le code source a été poussé sur GitHub :

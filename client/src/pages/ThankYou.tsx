@@ -47,7 +47,7 @@ export default function ThankYou() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <Home className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simulateur Prêt Immobilier</span>
+            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
           </a>
         </div>
       </header>
@@ -192,7 +192,7 @@ export default function ThankYou() {
       {/* Footer */}
       <footer className="bg-secondary/50 py-8 mt-12">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Simulateur Prêt Immobilier. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Simvan Digital. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

@@ -87,7 +87,7 @@ export default function WhiteLabelEmbed() {
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              Simulateur Prêt Immobilier
+              Simvan Digital
             </a>
           </p>
         </div>
@@ -117,7 +117,7 @@ export function generateEmbedCode(partnerId: string, options?: {
   height="${options?.height || "800px"}"
   frameborder="0"
   style="border: none; border-radius: 8px;"
-  title="Simulateur Prêt Immobilier"
+  title="Simvan Digital"
 ></iframe>`;
 
   return iframeCode;

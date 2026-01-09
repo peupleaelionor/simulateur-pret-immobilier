@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2026 Simulateur Prêt Immobilier. Tous droits réservés.
+            © 2026 Simvan Digital. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-muted-foreground hover:text-primary transition">
@@ -152,7 +152,7 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="mt-8 p-4 bg-background rounded-lg border border-border">
           <p className="text-xs text-muted-foreground text-center">
-            Simulateur Prêt Immobilier n'est pas un établissement de crédit. Les taux et conditions affichés sont à titre
+            Simvan Digital n'est pas un établissement de crédit. Les taux et conditions affichés sont à titre
             informatif. Consultez un courtier ou votre banque pour des offres réelles.
           </p>
         </div>

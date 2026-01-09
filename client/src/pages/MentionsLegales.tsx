@@ -9,7 +9,7 @@ export default function MentionsLegales() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <Home className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simulateur Prêt Immobilier</span>
+            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
           </a>
           <nav className="flex items-center gap-4">
             <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -250,7 +250,7 @@ export default function MentionsLegales() {
       {/* Footer */}
       <footer className="bg-secondary/50 py-8 mt-12">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Simulateur Prêt Immobilier. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Simvan Digital. Tous droits réservés.</p>
         </div>
       </footer>
     </div>

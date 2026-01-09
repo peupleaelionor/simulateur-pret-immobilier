@@ -13,12 +13,12 @@ interface SEOHeadProps {
 const mortgageCalculatorSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialProduct",
-  "name": "Simulateur de Prêt Immobilier",
+  "name": "Simvan Digital",
   "description": "Calculez votre capacité d'emprunt immobilier avec notre simulateur gratuit. Algorithmes bancaires français réels, règles HCSF 2026.",
   "provider": {
     "@type": "Organization",
-    "name": "Simulateur Prêt Immobilier",
-    "url": "https://simulateur-pret-immobilier.fr"
+    "name": "Simvan Digital",
+    "url": "https://simvan.digital"
   },
   "category": "Mortgage Loan",
   "feesAndCommissionsSpecification": "Service gratuit, sans engagement",
@@ -43,9 +43,9 @@ const mortgageLoanSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Simulateur Prêt Immobilier",
-  "url": "https://simulateur-pret-immobilier.fr",
-  "logo": "https://simulateur-pret-immobilier.fr/logo.png",
+  "name": "Simvan Digital",
+  "url": "https://simvan.digital",
+  "logo": "https://simvan.digital/logo.png",
   "description": "Simulateur de prêt immobilier gratuit avec algorithmes bancaires français réels",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -143,11 +143,11 @@ const faqSchema = {
 };
 
 export default function SEOHead({
-  title = "Simulateur Prêt Immobilier 2026 - Calculez votre capacité d'emprunt gratuitement",
+  title = "Simvan Digital 2026 - Calculez votre capacité d'emprunt gratuitement",
   description = "Simulez votre prêt immobilier en 30 secondes. Algorithmes bancaires français réels, règles HCSF 2026, tableau d'amortissement complet. 100% gratuit, sans engagement.",
-  canonical = "https://simulateur-pret-immobilier.fr",
+  canonical = "https://simvan.digital",
   type = "website",
-  image = "https://simulateur-pret-immobilier.fr/og-image.png",
+  image = "https://simvan.digital/og-image.png",
   noindex = false,
 }: SEOHeadProps) {
   useEffect(() => {
@@ -177,7 +177,7 @@ export default function SEOHead({
     updateMeta("og:url", canonical, true);
     updateMeta("og:image", image, true);
     updateMeta("og:locale", "fr_FR", true);
-    updateMeta("og:site_name", "Simulateur Prêt Immobilier", true);
+    updateMeta("og:site_name", "Simvan Digital", true);
 
     // Twitter Card tags
     updateMeta("twitter:card", "summary_large_image");

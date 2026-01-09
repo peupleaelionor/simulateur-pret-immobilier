@@ -29,9 +29,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 2161000,
     averagePropertyPrice: 10500,
     averageRate: 3.50,
-    metaTitle: "Simulateur Prêt Immobilier Paris 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Paris 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Paris. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 10 500€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Paris",
+    h1: "Simvan Digital Paris",
     content: "Paris, capitale française, affiche un prix moyen au m² de 10 500€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Paris.",
   },
   {
@@ -41,9 +41,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 516092,
     averagePropertyPrice: 5200,
     averageRate: 3.45,
-    metaTitle: "Simulateur Prêt Immobilier Lyon 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Lyon 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Lyon. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 5 200€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Lyon",
+    h1: "Simvan Digital Lyon",
     content: "Lyon, deuxième ville de France, affiche un prix moyen au m² de 5 200€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Lyon.",
   },
   {
@@ -53,9 +53,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 869815,
     averagePropertyPrice: 3800,
     averageRate: 3.40,
-    metaTitle: "Simulateur Prêt Immobilier Marseille 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Marseille 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Marseille. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 3 800€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Marseille",
+    h1: "Simvan Digital Marseille",
     content: "Marseille, ville méditerranéenne, affiche un prix moyen au m² de 3 800€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Marseille.",
   },
   {
@@ -65,9 +65,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 471941,
     averagePropertyPrice: 3500,
     averageRate: 3.45,
-    metaTitle: "Simulateur Prêt Immobilier Toulouse 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Toulouse 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Toulouse. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 3 500€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Toulouse",
+    h1: "Simvan Digital Toulouse",
     content: "Toulouse, ville rose du Sud-Ouest, affiche un prix moyen au m² de 3 500€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Toulouse.",
   },
   {
@@ -77,9 +77,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 340017,
     averagePropertyPrice: 5500,
     averageRate: 3.50,
-    metaTitle: "Simulateur Prêt Immobilier Nice 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Nice 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Nice. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 5 500€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Nice",
+    h1: "Simvan Digital Nice",
     content: "Nice, perle de la Côte d'Azur, affiche un prix moyen au m² de 5 500€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Nice.",
   },
   {
@@ -89,9 +89,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 303382,
     averagePropertyPrice: 3900,
     averageRate: 3.40,
-    metaTitle: "Simulateur Prêt Immobilier Nantes 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Nantes 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Nantes. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 3 900€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Nantes",
+    h1: "Simvan Digital Nantes",
     content: "Nantes, ville dynamique de l'Ouest, affiche un prix moyen au m² de 3 900€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Nantes.",
   },
   {
@@ -101,9 +101,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 249712,
     averagePropertyPrice: 4800,
     averageRate: 3.45,
-    metaTitle: "Simulateur Prêt Immobilier Bordeaux 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Bordeaux 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Bordeaux. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 4 800€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Bordeaux",
+    h1: "Simvan Digital Bordeaux",
     content: "Bordeaux, capitale mondiale du vin, affiche un prix moyen au m² de 4 800€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Bordeaux.",
   },
   {
@@ -113,9 +113,9 @@ export const FRENCH_CITIES: LocalSEOData[] = [
     population: 232741,
     averagePropertyPrice: 3300,
     averageRate: 3.40,
-    metaTitle: "Simulateur Prêt Immobilier Lille 2026 - Calcul Gratuit",
+    metaTitle: "Simvan Digital Lille 2026 - Calcul Gratuit",
     metaDescription: "Simulez votre prêt immobilier à Lille. Calculez votre capacité d'emprunt avec les taux actuels. Prix moyen: 3 300€/m². Gratuit et sans engagement.",
-    h1: "Simulateur Prêt Immobilier Lille",
+    h1: "Simvan Digital Lille",
     content: "Lille, métropole du Nord, affiche un prix moyen au m² de 3 300€. Notre simulateur vous aide à calculer votre capacité d'emprunt pour un achat immobilier à Lille.",
   },
 ];
@@ -132,7 +132,7 @@ export function getLocalSEOData(slug: string): LocalSEOData | undefined {
  */
 export function generateLocalContent(city: LocalSEOData): string {
   return `
-## Simulateur de Prêt Immobilier à ${city.city}
+## Simvan Digital à ${city.city}
 
 ${city.content}
 
@@ -173,7 +173,7 @@ export function generateLocalBusinessSchema(city: LocalSEOData) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Simulateur Prêt Immobilier ${city.city}`,
+    "name": `Simvan Digital ${city.city}`,
     "description": city.metaDescription,
     "address": {
       "@type": "PostalAddress",
