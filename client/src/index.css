@@ -193,6 +193,14 @@
     @apply transition-all duration-300 hover:shadow-md;
   }
 
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl;
+  }
+
+  .dark .glass-card {
+    @apply bg-slate-900/80 backdrop-blur-xl border border-slate-800/50 shadow-2xl;
+  }
+
   .trust-badge {
     @apply inline-flex items-center gap-2 px-3 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium;
   }
