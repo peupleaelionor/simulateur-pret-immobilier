@@ -102,9 +102,105 @@ export async function genererSynthesePDF(resultat: ResultatSimulation, nom: stri
 
   // --- FOOTER ---
   doc.setFontSize(8);
-  doc.setTextColor(150, 150, 150);
+  doc.setTextColor(150, 150, 150);  // Footer / Disclaimer
   const footerText = "Ce document est une simulation confidentielle générée par Simvan Immo. Simvan Digital - Bordeaux Centre. Réalisé par TechFlow Solutions.";
   doc.text(footerText, 105, 285, { align: "center" });
+
+  return doc.output("blob");
+}
+
+export async function genererAttestationFaisabilite(resultat: ResultatSimulation, nom: string) {
+  const doc = new jsPDF();
+  const date = new Date().toLocaleDateString("fr-FR");
+  const ref = `ATT-${Math.random().toString(36).substr(2, 8).toUpperCase()}`;
+
+  // --- DESIGN SYSTEM ---
+  const colors = {
+    primary: [15, 23, 42],    // Slate 900
+    accent: [37, 99, 235],     // Blue 600
+    gold: [180, 150, 50],      // Gold for seal
+    text: [51, 65, 85],        // Slate 700
+  };
+
+  // --- BORDER ---
+  doc.setDrawColor(colors.primary[0], colors.primary[1], colors.primary[2]);
+  doc.setLineWidth(0.5);
+  doc.rect(10, 10, 190, 277);
+  doc.setLineWidth(0.2);
+  doc.rect(12, 12, 186, 273);
+
+  // --- HEADER ---
+  doc.setFontSize(24);
+  doc.setFont("helvetica", "bold");
+  doc.setTextColor(colors.primary[0], colors.primary[1], colors.primary[2]);
+  doc.text("SIMVAN IMMO", 105, 35, { align: "center" });
+  
+  doc.setFontSize(14);
+  doc.setFont("helvetica", "normal");
+  doc.text("ATTESTATION DE FAISABILITÉ FINANCIÈRE", 105, 45, { align: "center" });
+  
+  doc.setDrawColor(colors.accent[0], colors.accent[1], colors.accent[2]);
+  doc.setLineWidth(1);
+  doc.line(80, 50, 130, 50);
+
+  // --- BODY ---
+  doc.setFontSize(12);
+  doc.text("La plateforme Simvan Immo certifie avoir réalisé une simulation approfondie", 105, 70, { align: "center" });
+  doc.text("du projet immobilier de :", 105, 77, { align: "center" });
+
+  doc.setFontSize(18);
+  doc.setFont("helvetica", "bold");
+  doc.text(nom.toUpperCase(), 105, 90, { align: "center" });
+
+  doc.setFontSize(12);
+  doc.setFont("helvetica", "normal");
+  doc.text("Sur la base des éléments déclarés, le profil présente les caractéristiques suivantes :", 40, 110);
+
+  // --- DATA BOX ---
+  doc.setFillColor(245, 247, 250);
+  doc.roundedRect(40, 115, 130, 60, 3, 3, "F");
+  
+  doc.setFont("helvetica", "bold");
+  doc.text("CAPACITÉ D'EMPRUNT ESTIMÉE :", 50, 130);
+  doc.setTextColor(colors.accent[0], colors.accent[1], colors.accent[2]);
+  doc.text(formaterEuros(resultat.capaciteEmprunt), 160, 130, { align: "right" });
+
+  doc.setTextColor(colors.primary[0], colors.primary[1], colors.primary[2]);
+  doc.text("APPORT PERSONNEL DÉCLARÉ :", 50, 145);
+  doc.text(formaterEuros(resultat.apportPersonnel || 0), 160, 145, { align: "right" });
+
+  doc.text("BUDGET D'ACHAT TOTAL :", 50, 160);
+  doc.setFontSize(14);
+  doc.text(formaterEuros(resultat.budgetTotal), 160, 160, { align: "right" });
+
+  // --- SEAL / VALIDATION ---
+  doc.setFontSize(11);
+  doc.setFont("helvetica", "normal");
+  const validation = "Cette attestation confirme que le projet respecte les critères d'endettement usuels (taux d'endettement < 35%) et constitue un dossier solide pour une entrée en relation bancaire.";
+  doc.text(doc.splitTextToSize(validation, 130), 40, 190);
+
+  // --- GOLD SEAL ---
+  doc.setDrawColor(colors.gold[0], colors.gold[1], colors.gold[2]);
+  doc.setLineWidth(1);
+  doc.circle(160, 230, 20);
+  doc.setFontSize(8);
+  doc.setTextColor(colors.gold[0], colors.gold[1], colors.gold[2]);
+  doc.text("CERTIFIÉ", 160, 228, { align: "center" });
+  doc.text("SIMVAN", 160, 233, { align: "center" });
+  doc.text("2026", 160, 238, { align: "center" });
+
+  // --- SIGNATURE ---
+  doc.setTextColor(colors.primary[0], colors.primary[1], colors.primary[2]);
+  doc.setFontSize(10);
+  doc.text("Fait à Bordeaux, le " + date, 40, 230);
+  doc.text("La Direction Simvan Immo", 40, 237);
+  doc.setFont("helvetica", "italic");
+  doc.text("Document numérique certifié", 40, 244);
+
+  // --- FOOTER ---
+  doc.setFontSize(8);
+  doc.setTextColor(150, 150, 150);
+  doc.text(`Référence : ${ref} - Vérifiable sur simvan.digital/verif`, 105, 280, { align: "center" });
 
   return doc.output("blob");
 }

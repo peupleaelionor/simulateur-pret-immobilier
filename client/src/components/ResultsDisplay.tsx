@@ -30,6 +30,8 @@ import {
   formaterPourcentage,
   type ResultatSimulation,
 } from "@shared/mortgage-calculator";
+import ActionPlan from "./ActionPlan";
+import { genererAttestationFaisabilite } from "@/lib/pdf-generator";
 
 interface ResultsDisplayProps {
   result: ResultatSimulation;
@@ -90,6 +92,32 @@ export default function ResultsDisplay({ result }: ResultsDisplayProps) {
       totalPaye: parAnnee.reduce((sum, a) => sum + a.totalPaye, 0),
     };
   }, [result.tableauAmortissement]);
+
+  const handleDownloadAttestation = async () => {
+    try {
+      const nom = prompt("Veuillez saisir votre nom complet pour l'attestation :") || "Client Simvan";
+      const pdfBlob = await genererAttestationFaisabilite(result, nom);
+      const url = URL.createObjectURL(pdfBlob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `Attestation_Faisabilite_Simvan_${nom.replace(/\s+/g, "_")}.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Erreur génération attestation:", err);
+    }
+  };
+
+  const handleContactExpert = () => {
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/contact";
+    }
+  };
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-6">
@@ -404,6 +432,13 @@ export default function ResultsDisplay({ result }: ResultsDisplayProps) {
           </p>
         </CardContent>
       </Card>
+
+      {/* Action Plan Section */}
+      <ActionPlan 
+        result={result} 
+        onDownloadAttestation={handleDownloadAttestation}
+        onContactExpert={handleContactExpert}
+      />
     </div>
   );
 }
