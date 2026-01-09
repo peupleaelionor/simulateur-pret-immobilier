@@ -102,7 +102,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <SEOHead 
         title="Simvan Digital 2026 - Calculez votre capacité d'emprunt"
-        description="Simulez votre prêt immobilier en 30 secondes. Algorithmes bancaires français réels, règles HCSF 2026, tableau d'amortissement complet. 100% gratuit."
+        description="Simvan Immo • Simulez votre prêt immobilier en 2 minuteses. Algorithmes bancaires français réels, règles HCSF 2026, tableau d'amortissement complet. 100% gratuit."
         canonical="https://simulateur-pret-immobilier.fr"
       />
       {/* Header */}
@@ -110,7 +110,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <HomeIcon className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
+            <span className="font-bold text-xl tracking-tight hidden sm:inline">Simvan <span className="text-primary">Immo</span></span>
           </a>
           <nav className="flex items-center gap-4">
             <a href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -134,7 +134,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Simulez <span className="text-primary">VOTRE</span> prêt immobilier en{" "}
+              <span className="text-primary">Simvan Immo</span> • Simulez votre prêt immobilier en{" "}
               <span className="text-accent">30 secondes</span>
             </h1>
             

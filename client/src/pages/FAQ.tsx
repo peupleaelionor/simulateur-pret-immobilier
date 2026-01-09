@@ -194,7 +194,7 @@ export default function FAQ() {
         <div className="container flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <Home className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg hidden sm:inline">Simvan Digital</span>
+            <span className="font-bold text-xl tracking-tight hidden sm:inline">Simvan <span className="text-primary">Immo</span></span>
           </a>
           <nav className="flex items-center gap-4">
             <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

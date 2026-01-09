@@ -174,7 +174,7 @@ export default function LeadModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl sm:text-2xl text-center font-bold">
             🌟 3 offres de nos partenaires vous attendent
@@ -216,7 +216,7 @@ export default function LeadModal({
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-3">
           {/* Email field */}
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
