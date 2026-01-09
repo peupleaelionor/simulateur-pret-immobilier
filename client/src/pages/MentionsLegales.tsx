@@ -45,10 +45,10 @@ export default function MentionsLegales() {
                 Le site <strong className="text-foreground">simvan.digital</strong> est édité par :
               </p>
               <div className="bg-secondary/30 rounded-lg p-4 mb-4">
-                <p className="mb-2"><strong>Raison sociale :</strong> Simvan Digital</p>
-                <p className="mb-2"><strong>Forme juridique :</strong> Auto-entrepreneur</p>
-                <p className="mb-2"><strong>Siège social :</strong> 27 Avenue du Chemin de la Vie, 33440 Ambarès-et-Lagrave, France</p>
+                <p className="mb-2"><strong>Éditeur du site :</strong> Simvan Digital</p>
+                <p className="mb-2"><strong>Forme juridique :</strong> Auto-entrepreneur / Micro-entreprise</p>
                 <p className="mb-2"><strong>SIRET :</strong> 945 068 260 00013</p>
+                <p className="mb-2"><strong>Siège social :</strong> 27 Avenue du Chemin de la Vie, 33440 Ambarès-et-Lagrave, France</p>
                 <p className="mb-2"><strong>Directeur de la publication :</strong> Simvan Digital</p>
                 <p><strong>Contact :</strong> simvan.immo@outlook.com</p>
               </div>
