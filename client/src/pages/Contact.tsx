@@ -285,8 +285,8 @@ export default function Contact() {
                     <div>
                       <p className="font-medium mb-1">Adresse</p>
 	                      <p className="text-muted-foreground">
-	                        Ambarès Centre, 33440<br />
-	                        Ambarès-et-Lagrave, France
+27 Avenue du Chemin de la Vie, 33440<br />
+		                        Ambarès-et-Lagrave, France
 	                      </p>
                     </div>
                   </div>

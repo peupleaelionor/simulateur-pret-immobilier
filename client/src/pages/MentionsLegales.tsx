@@ -48,7 +48,7 @@ export default function MentionsLegales() {
                 <p className="mb-2"><strong>Raison sociale :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Forme juridique :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Capital social :</strong> [À compléter]</p>
-                <p className="mb-2"><strong>Siège social :</strong> Ambarès Centre, 33440 Ambarès-et-Lagrave, France</p>
+                <p className="mb-2"><strong>Siège social :</strong> 27 Avenue du Chemin de la Vie, 33440 Ambarès-et-Lagrave, France</p>
                 <p className="mb-2"><strong>RCS :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>SIRET :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Directeur de la publication :</strong> [À compléter]</p>
@@ -230,7 +230,7 @@ export default function MentionsLegales() {
               </p>
               <div className="bg-secondary/30 rounded-lg p-4">
                 <p className="mb-2"><strong>Email :</strong> simvan.immo@outlook.com</p>
-                <p><strong>Adresse :</strong> Ambarès Centre, 33440 Ambarès-et-Lagrave, France</p>
+                <p><strong>Adresse :</strong> 27 Avenue du Chemin de la Vie, 33440 Ambarès-et-Lagrave, France</p>
               </div>
             </section>
           </div>
