@@ -53,14 +53,7 @@ export default function Footer() {
                   Nous contacter
                 </a>
               </li>
-              <li>
-                <a
-                  href="tel:+33123456789"
-                  className="text-sm text-muted-foreground hover:text-primary transition"
-                >
-                  +33 1 23 45 67 89
-                </a>
-              </li>
+
             </ul>
           </div>
 
@@ -133,9 +126,14 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2026 Simvan Digital. Tous droits réservés. Propriété de Simvan Immo.
-          </p>
+          <div className="flex flex-col">
+            <p className="text-sm text-muted-foreground">
+              © 2026 Simvan Digital. Tous droits réservés. Propriété de Simvan Immo.
+            </p>
+            <p className="text-xs text-muted-foreground mt-1">
+              Réalisé avec ❤️ par <a href="https://www.instagram.com/tech.flowsolutions?igsh=MWRhMHZ0Y2g5NTZ5ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition font-medium">TechFlow Solutions</a>
+            </p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-muted-foreground hover:text-primary transition">
               Twitter

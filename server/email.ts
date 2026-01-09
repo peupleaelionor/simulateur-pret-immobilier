@@ -256,6 +256,69 @@ Envoyé le ${new Date().toLocaleString("fr-FR")}
     });
 
     console.log("[Email] Lead email sent successfully to", EMAIL_TO);
+
+    // Envoyer l'email de confirmation à l'utilisateur
+    try {
+      await transporter.sendMail({
+        from: `"Simvan Immo" <${EMAIL_FROM}>`,
+        to: data.email,
+        subject: `Votre simulation de prêt immobilier - Simvan Immo`,
+        html: `
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 10px; }
+    .header { background: #0066cc; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { padding: 20px; }
+    .highlight { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 15px; margin: 20px 0; }
+    .footer { margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666; text-align: center; }
+    .button { display: inline-block; padding: 12px 24px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Simvan Immo</h1>
+      <p>Votre projet immobilier commence ici</p>
+    </div>
+    <div class="content">
+      <p>Bonjour,</p>
+      <p>Merci d'avoir utilisé <strong>Simvan Immo</strong> pour votre simulation de prêt immobilier. Nous avons bien reçu votre demande et nos partenaires courtiers analysent actuellement votre dossier pour vous proposer les meilleures offres.</p>
+      
+      <div class="highlight">
+        <h3>Récapitulatif de votre projet :</h3>
+        <ul>
+          <li><strong>Montant emprunté :</strong> ${data.montantEmprunte.toLocaleString("fr-FR")} €</li>
+          <li><strong>Durée :</strong> ${data.dureeAns} ans</li>
+          <li><strong>Mensualité estimée :</strong> ${data.mensualite ? data.mensualite.toLocaleString("fr-FR") + " €/mois" : "À confirmer"}</li>
+        </ul>
+      </div>
+
+      <p><strong>Quelle est la suite ?</strong></p>
+      <p>Un expert en financement immobilier vous contactera par téléphone ou par email sous 24h ouvrées pour affiner votre projet et vous présenter 3 offres personnalisées.</p>
+      
+      <p>En attendant, vous pouvez retrouver tous nos conseils sur notre site.</p>
+      
+      <div style="text-align: center;">
+        <a href="https://simvan.digital" class="button">Retourner sur le site</a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2026 Simvan Digital - Bordeaux Centre, Centre-ville, Bordeaux<br>
+      Cet email vous a été envoyé suite à votre simulation sur simvan.digital</p>
+    </div>
+  </div>
+</body>
+</html>
+        `.trim(),
+      });
+      console.log("[Email] Confirmation email sent to user:", data.email);
+    } catch (confirmError) {
+      console.error("[Email] Failed to send confirmation email to user:", confirmError);
+    }
+
     return true;
   } catch (error) {
     console.error("[Email] Failed to send lead email:", error);

@@ -72,6 +72,10 @@ export default function LeadModal({
         onSuccess();
       }, 2000);
     },
+    onError: (error) => {
+      console.error("Erreur lors de la création du lead:", error);
+      alert("Une erreur est survenue lors de l'envoi de votre demande : " + error.message);
+    }
   });
 
   // Track event mutation
