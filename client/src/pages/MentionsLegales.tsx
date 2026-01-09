@@ -48,7 +48,7 @@ export default function MentionsLegales() {
                 <p className="mb-2"><strong>Raison sociale :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Forme juridique :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Capital social :</strong> [À compléter]</p>
-                <p className="mb-2"><strong>Siège social :</strong> [À compléter]</p>
+                <p className="mb-2"><strong>Siège social :</strong> Bordeaux Centre, Centre-ville, Bordeaux, France</p>
                 <p className="mb-2"><strong>RCS :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>SIRET :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Directeur de la publication :</strong> [À compléter]</p>
