@@ -13,22 +13,6 @@ const PARTENAIRES = [
     highlight: "N°1 en France",
     rating: 4.8
   },
-];
-
-const ASSURANCES = [
-  {
-    name: "Assurland",
-    description: "Économisez jusqu'à 50% sur votre assurance emprunteur en comparant les offres.",
-    url: "https://www.assurland.com/assurance-emprunteur.html",
-    highlight: "Économie Max",
-  },
-  {
-    name: "Luko",
-    description: "L'assurance de prêt 100% digitale, simple et sans frais cachés.",
-    url: "https://www.luko.eu/fr/assurance-emprunteur",
-    highlight: "100% Digital",
-  }
-];
   {
     name: "Pretto",
     description: "Le courtier 100% en ligne. Obtenez votre attestation de financement immédiatement.",
@@ -44,6 +28,21 @@ const ASSURANCES = [
     url: "https://www.empruntis.com/credit-immobilier/simulation-pret-immobilier.php",
     highlight: "Expertise locale",
     rating: 4.7
+  }
+];
+
+const ASSURANCES = [
+  {
+    name: "Assurland",
+    description: "Économisez jusqu'à 50% sur votre assurance emprunteur en comparant les offres.",
+    url: "https://www.assurland.com/assurance-emprunteur.html",
+    highlight: "Économie Max",
+  },
+  {
+    name: "Luko",
+    description: "L'assurance de prêt 100% digitale, simple et sans frais cachés.",
+    url: "https://www.luko.eu/fr/assurance-emprunteur",
+    highlight: "100% Digital",
   }
 ];
 
