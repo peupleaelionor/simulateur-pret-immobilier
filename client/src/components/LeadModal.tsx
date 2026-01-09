@@ -87,11 +87,10 @@ export default function LeadModal({
     return re.test(email);
   };
 
-  // Validate French phone number
+  // Validate phone number (more flexible)
   const validatePhone = (phone: string): boolean => {
-    const cleaned = phone.replace(/\s/g, "");
-    const re = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
-    return re.test(cleaned);
+    const cleaned = phone.replace(/\D/g, "");
+    return cleaned.length >= 10;
   };
 
   // Format phone number as user types
@@ -133,7 +132,7 @@ export default function LeadModal({
         revenusNets: simulationData.revenusNets,
         apport: simulationData.apport,
         mensualite: simulationData.mensualite,
-        tauxUtilise: simulationData.tauxUtilise.toString(),
+        tauxUtilise: simulationData.tauxUtilise.toFixed(3),
         consentementRgpd: true,
         apportPersonnel: apport ? parseInt(apport) : undefined,
         zoneGeographique: zone || undefined,
