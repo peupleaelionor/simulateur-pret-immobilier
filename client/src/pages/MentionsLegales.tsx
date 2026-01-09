@@ -52,7 +52,7 @@ export default function MentionsLegales() {
                 <p className="mb-2"><strong>RCS :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>SIRET :</strong> [À compléter]</p>
                 <p className="mb-2"><strong>Directeur de la publication :</strong> [À compléter]</p>
-                <p><strong>Contact :</strong> contact@simvan.digital</p>
+                <p><strong>Contact :</strong> simvan.immo@outlook.com</p>
               </div>
               <p className="text-muted-foreground">
                 <strong>Hébergeur :</strong> Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA
@@ -65,7 +65,7 @@ export default function MentionsLegales() {
               <h3 className="text-xl font-semibold mb-3 mt-6">2.1 Responsable du traitement</h3>
               <p className="text-muted-foreground mb-4">
                 Le responsable du traitement des données personnelles est [À compléter], 
-                joignable à l'adresse : contact@simvan.digital
+                joignable à l'adresse : simvan.immo@outlook.com
               </p>
 
               <h3 className="text-xl font-semibold mb-3 mt-6">2.2 Données collectées</h3>
@@ -130,7 +130,7 @@ export default function MentionsLegales() {
                 <li><strong className="text-foreground">Droit de retrait du consentement :</strong> retirer votre consentement à tout moment</li>
               </ul>
               <p className="text-muted-foreground mb-4">
-                Pour exercer ces droits, contactez-nous à : <strong className="text-foreground">contact@simvan.digital</strong>
+                Pour exercer ces droits, contactez-nous à : <strong className="text-foreground">simvan.immo@outlook.com</strong>
               </p>
               <p className="text-muted-foreground">
                 Vous pouvez également introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>
@@ -229,7 +229,7 @@ export default function MentionsLegales() {
                 vous pouvez nous contacter :
               </p>
               <div className="bg-secondary/30 rounded-lg p-4">
-                <p className="mb-2"><strong>Email :</strong> contact@simvan.digital</p>
+                <p className="mb-2"><strong>Email :</strong> simvan.immo@outlook.com</p>
                 <p><strong>Adresse :</strong> [À compléter]</p>
               </div>
             </section>

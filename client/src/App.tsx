@@ -13,6 +13,7 @@ import Admin from "./pages/Admin";
 import GuidePremierAchat from "./pages/GuidePremierAchat";
 import ComparatifAssurances from "./pages/ComparatifAssurances";
 import LegalNotice from "./pages/LegalNotice";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import CookieBanner from "./components/CookieBanner";
 
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/merci" component={ThankYou} />
       <Route path="/faq" component={FAQ} />
       <Route path="/mentions-legales" component={MentionsLegales} />
+      <Route path="/contact" component={Contact} />
       <Route path="/legal" component={LegalNotice} />
       <Route path="/admin" component={Admin} />
       <Route path="/guide-premier-achat" component={GuidePremierAchat} />

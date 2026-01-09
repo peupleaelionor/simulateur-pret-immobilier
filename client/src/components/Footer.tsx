@@ -41,13 +41,13 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Entreprise</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
-                  Qui sommes-nous
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition">
+                  Contact
                 </Link>
               </li>
               <li>
                 <a
-                  href="mailto:contact@simvan.digital"
+                  href="mailto:simvan.immo@outlook.com"
                   className="text-sm text-muted-foreground hover:text-primary transition"
                 >
                   Nous contacter
@@ -74,13 +74,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
+                <Link href="/mentions-legales#rgpd" className="text-sm text-muted-foreground hover:text-primary transition">
                   Politique de confidentialité
                 </Link>
               </li>
               <li>
-                <Link href="/mentions-legales" className="text-sm text-muted-foreground hover:text-primary transition">
-                  Conditions d'utilisation
+                <Link href="/mentions-legales#cookies" className="text-sm text-muted-foreground hover:text-primary transition">
+                  Politique des cookies
                 </Link>
               </li>
             </ul>

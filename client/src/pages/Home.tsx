@@ -318,14 +318,24 @@ export default function Home() {
             Obtenez une estimation précise de votre capacité d'emprunt et recevez 
             des offres personnalisées de nos partenaires courtiers.
           </p>
-          <Button 
-            onClick={scrollToCalculator}
-            size="lg"
-            variant="secondary"
-            className="h-14 px-8 text-lg font-semibold"
-          >
-            SIMULER MON PRÊT GRATUITEMENT
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              onClick={scrollToCalculator}
+              size="lg"
+              variant="secondary"
+              className="h-14 px-8 text-lg font-semibold"
+            >
+              SIMULER MON PRÊT GRATUITEMENT
+            </Button>
+            <Button 
+              onClick={() => window.location.href = '/contact'}
+              size="lg"
+              variant="outline"
+              className="h-14 px-8 text-lg font-semibold bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            >
+              NOUS CONTACTER
+            </Button>
+          </div>
         </div>
       </section>
 
