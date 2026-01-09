@@ -281,6 +281,38 @@ export const appRouter = router({
       return getAffiliateStats();
     }),
   }),
+
+  // Contact form
+  contact: router({
+    // Send contact message
+    send: publicProcedure
+      .input(z.object({
+        name: z.string().min(1, "Le nom est requis"),
+        email: z.string().email("Email invalide"),
+        phone: z.string().optional(),
+        subject: z.string().optional(),
+        message: z.string().min(1, "Le message est requis"),
+      }))
+      .mutation(async ({ input }) => {
+        // For now, just log the contact message
+        // In production, you would send an email here
+        console.log("Contact form submission:", {
+          ...input,
+          timestamp: new Date().toISOString(),
+          destination: "simvan.immo@outlook.com"
+        });
+
+        // TODO: Implement email sending with nodemailer or similar
+        // Example:
+        // await sendEmail({
+        //   to: "simvan.immo@outlook.com",
+        //   subject: `Contact: ${input.subject || 'Nouveau message'}`,
+        //   text: `Nom: ${input.name}\nEmail: ${input.email}\nTéléphone: ${input.phone || 'Non renseigné'}\n\nMessage:\n${input.message}`
+        // });
+
+        return { success: true };
+      }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

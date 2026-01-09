@@ -126,6 +126,20 @@ export async function createLead(data: Omit<InsertLead, "id" | "createdAt" | "up
     
     const insertId = result[0].insertId;
     const newLead = await db.select().from(leads).where(eq(leads.id, insertId)).limit(1);
+    
+    // Log lead capture for email notification
+    if (newLead[0]) {
+      console.log("[LEAD CAPTURED] New lead to notify:", {
+        id: newLead[0].id,
+        email: newLead[0].email,
+        phone: newLead[0].phone,
+        montantEmprunte: newLead[0].montantEmprunte,
+        timestamp: new Date().toISOString(),
+        destination: "simvan.immo@outlook.com"
+      });
+      // TODO: Send email notification to simvan.immo@outlook.com
+    }
+    
     return newLead[0] || null;
   } catch (error) {
     console.error("[Database] Failed to create lead:", error);
